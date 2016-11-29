@@ -3,19 +3,38 @@ Initializing a repository creates a new hidden file which tracks the changes to 
 
 
 
-How is the staging area different from the working directory and the repository?
+How is the staging area different from the working directory and the repository? 
 What value do you think it offers?
+
+
+
+The staging area is an intermediate between the working directory and the repository. It lets you load only the files whose changes you want to be part of the commit since you don't necessarily want to have all files in the working directory be associated with every commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+
+Often a logical change will only concern one or some selection of files. The staging area makes sure that changes made in files not included in a logical change are not included in a commit.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+
+Branches are useful when you like to try a new feature or version of something, but do not want to commit those changes to the main or master program.  This allows you to document your progress on an experimental feature or a different version without changing the main and probably functional code.
+
 How do the diagrams help you visualize the branch structure?
+Diagrams let you see where branches occur and which commits occur in each branch.  Branch diagrams also demonstrate reachability (including parent and children nodes when arrows are added.)
+
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+
+
+The name of one of the branches disappears and its commits are subsumsed into the other. The merged commit is a child of both branches and shows commits sorted by time stamp from both branches.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+When two files are clealrly different (lines are added or removed) Git merges automatically. When two version of a line are found git does not merge manually and flags a conflict that users then have to resolve themselves.  It is good to be over cautious here.
