@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    
+
+Often just looking at changes between files will help you locate typos which have caused a program to stop working.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+
+
+Sometimes old versions may retain elements of what we want to keep. Being able to look back at old files helps us find these or see what exactly has changed.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    
+
+If you have to manually commit you may forget to do it from time to time, like I often do with saving.  However, manually commiting will allow you to commit only when it makes sense, and not in the middle of some change.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+ 
+
+Git works with repositories which group files that interact with each other.  Multiple files might be changes for one commit.  On the other hand, files that are saved on Google Drive are unlikely to interact with one another, so it is not necessary to commit changes to groups of files.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    
+
+The git log command shows you a log of all the different commits for a file. It includes a commit id, description of the changes and the time.  Git diff allows you to compare two different files and see which lines were added, removed, or changed.
+
+How might using version control make you more confident to make changes that
+ could break something?
+
+    
+If you  are confident you have old versions you won't be as worried about trying risky changes.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    
+
+It was recommended for completing the Data Science Nanodegree, and I am sure it will come in handy.
