@@ -41,7 +41,10 @@ and what would be harder?
     between users with multiple stages of creating/editting/getting feedback and verification that something like GoogleDocs does
     not.  So of course Git/Github is more difficult to learn, but the reward is higher functionality.
 
-When would you want to make changes in a separate branch rather than directly in
+6. When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Making changes in a different branch, especially when working in local vs. remote can be a big hassle.  Thus it's not to be done
+    without good reason.  A good reason would be to create an entirely different version of something (aka in another language) or
+    to create an experimental feature that may or may not make it into the final edition of something.  The benefit (and additional
+    cost) is that you can make significant changes without the fear that your presumably functional master version will get messed up.
