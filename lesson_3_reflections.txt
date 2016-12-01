@@ -30,10 +30,16 @@ stored locally?
   
   Git pull origin master  is equivalent to fetching the origin and merging master with the origin/master.
 
-How would you collaborate without using Git or GitHub?  What would be easier,
+5. How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    There are somewhat similar simpler mechanisms like collaborating on documents like Googledocs.  Something as old fashioned
+    as e-mailing documents iw now unthinkable because it creates many copies of the same file, all slightly different, and it can
+    be a nightmare to incorporate all of your changes into one document.  Googledocs is an improvement because it allows multiple users
+    to work on one file, but it is more general and does not have all the features for code editting and collaboration that
+    Git and GitHub does.  Git is a kind of version control but it adds the functionality of branches and GitHub allows collaboration
+    between users with multiple stages of creating/editting/getting feedback and verification that something like GoogleDocs does
+    not.  So of course Git/Github is more difficult to learn, but the reward is higher functionality.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
