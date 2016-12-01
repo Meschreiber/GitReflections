@@ -16,10 +16,19 @@ use one instead of another?
     machine.  Forks are a type of clone, but they copy someone else's repository that you do not have permission to change, and make
     a clone that you are able to change.  Branches are parts of a repository and thus they can exist withint a clone or fork.
 
-What is the benefit of having a copy of the last known state of the remote
+4. What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+   I have to admit, this last section about push, pull, fetch and fast-forward merges was a little bit difficult for me.
+   Still, I can answer this question.  Cloning sets up a remote called origin and a local called master.  In addition, there is also a 
+   local copy of the last known state/position of the remote.  This is useful so that when you do want to push changes, in case
+   there have been other changes from other users or other remote locations, you can compare and contrast these changes before making
+   any commits/merges.
+   
+  Git fetch updates just the local copy of the remote branch and then git log/diff will allow you to see the changes between your local
+  copy and the remote.
+  
+  Git pull origin master  is equivalent to fetching the origin and merging master with the origin/master.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
